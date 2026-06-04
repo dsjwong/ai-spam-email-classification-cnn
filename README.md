@@ -56,3 +56,19 @@ Input (padded sequences)
   → Dense (hidden) + ReLU + Dropout
   → Dense (1) + Sigmoid
 ```
+
+## Environment
+
+Developed and tested with:
+
+- Python 3.9+
+- Jupyter Notebook / JupyterLab
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt      # if provided
+# or manually: pip install numpy pandas matplotlib scikit-learn torch torchvision
+```
+
+Open notebooks in order — each notebook builds on outputs from the previous one.
