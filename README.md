@@ -1,6 +1,6 @@
 # Spam Email Classification with CNN
 
-Classifies emails as spam or ham (not spam) using a 1D Convolutional Neural Network operating on text embeddings. Achieves high accuracy by learning local n-gram patterns in email content.
+Classifies emails as spam or ham (not spam) using a 1D Convolutional Neural Network operating on text embeddings, learning local n-gram patterns in email content.
 
 ## Overview
 
@@ -46,6 +46,8 @@ from tensorflow import keras
 model = keras.models.load_model("spam_cnn_model.keras")
 ```
 
+Developed and tested with Python 3.9+.
+
 ## Model Architecture
 
 ```
@@ -56,19 +58,3 @@ Input (padded sequences)
   → Dense (hidden) + ReLU + Dropout
   → Dense (1) + Sigmoid
 ```
-
-## Environment
-
-Developed and tested with:
-
-- Python 3.9+
-- Jupyter Notebook / JupyterLab
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt      # if provided
-# or manually: pip install numpy pandas matplotlib scikit-learn torch torchvision
-```
-
-Open notebooks in order — each notebook builds on outputs from the previous one.
